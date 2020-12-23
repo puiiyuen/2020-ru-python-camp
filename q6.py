@@ -5,7 +5,7 @@
 def main():
     result = []
     for i in range(2000, 3200+1):
-        if i % 7 == 0 and i % 5 != 0:
+        if i % 7 == 0 and i % 5 != 0: # 
             result.append(i)
 
     print("The numbers betoween 2000 and 3200, which are divisible by 7 but are not a multiple of 5", result)

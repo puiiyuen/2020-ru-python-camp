@@ -8,12 +8,16 @@
 # W 200
 
 def main():
+    # Initial variable
     balance = 0.0
     op = 'd'
     amount = 0.0
+
+    # Prompt
     print("---Welcome to Ryerson Bank---")
     print("* Your account balance is: ", balance)
 
+    # while loop: check the operation (deposit/withdraw)
     while(op == 'd' or op == 'D' or op == 'w' or op == "W"):
         op = input(
             "Input 'D' for Deposit, 'W' for Withdraw, others for ending the transaction : ")
@@ -24,7 +28,7 @@ def main():
             print("Your account balance is", balance)
         elif op == 'w' or op == "W":
             amount = float(input("Input the amount for the transaction: "))
-            if amount > balance:
+            if amount > balance: # check if the balance is enougth
                 print("* Sorry, your balance is not enough.")
                 print("* Please try again.")
             else:

@@ -14,6 +14,7 @@ import re
 
 def main():
     password = input('Input a password to check: ')
+    # use regular expression to match the string
     x = re.search(
         '^(?=.*\d)(?=.+[a-z])(?=.+[A-Z])(?=.+[\$\#\@]).{6,12}$', password)
     if (x == None):
@@ -21,6 +22,11 @@ def main():
     else:
         print('The password is satisfied the criteria')
 
+    # '^(?=.*\d)(?=.+[a-z])(?=.+[A-Z])(?=.+[\$\#\@]).{6,12}$'
+    # |-digit-|-letter a-z-|-letter A-Z-|-$#@-|-length 6-12-|
+    
+    # ref: https://en.wikipedia.org/wiki/Regular_expression
+    # ref: https://regexr.com/
 
 if __name__ == "__main__":
     main()

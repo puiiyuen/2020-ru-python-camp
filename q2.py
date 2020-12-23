@@ -2,6 +2,9 @@
 # Date: 2020/12/21
 # Task/Requirement: Write a program which finds the Factorial of a number
 
+# function: factorial
+# parameter: n: postitve integer
+# recursively call the function
 def factorial(n):
     if n == 1 or n == 0:
         return 1

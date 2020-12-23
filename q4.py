@@ -5,6 +5,8 @@
 def main():
     arr = [3,5,42,455,67,67,4,-1,-55]
     print("The array is: ",arr)
+
+    # sorted function: default: ascending order
     print("sort ascending: ", sorted(arr))
     print("sort descending: ", sorted(arr,reverse=True))
 

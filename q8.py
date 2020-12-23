@@ -12,16 +12,19 @@ import datetime
 
 
 def main():
-    year = int(input("Input a year(e.g. 2020): "))
-    appname = input("Input a app name(whatsapp): ")
+
+    year = int(input("Input a year(e.g. 2020): ")) # Get a year from user
+    appname = input("Input a app name(whatsapp): ") # Get an app name from user
     day_amount = 0
     backup_filename_list = []
+
     print("The filename for all days in all months in a year ",
           year, "of the backup of ", appname, ": ")
+
     for month in range(1, 13):
-        day_amount = monthrange(year, month)
+        day_amount = monthrange(year, month) # Get the amount of the days in a sepcific month
         for day in range(1, day_amount[1]+1):
-            filename = datetime.datetime(year, month, day).strftime("%Y%m%d")
+            filename = datetime.datetime(year, month, day).strftime("%Y%m%d") # create a datetime object with 'year, month, day'
             filename += '_backup_'
             filename += appname
             filename += '.zip'

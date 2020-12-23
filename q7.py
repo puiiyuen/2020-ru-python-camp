@@ -14,6 +14,7 @@ def main():
     y = 0
     op = 'UP'
     step_size = 0
+    # Check the direction
     while (op == 'UP' or op == 'DOWN' or op == 'LEFT' or op == 'RIGHT'):
         op = input(
             'Input the direction(UP,DOWN,LEFT,RIGHT,other words for ending the operation): ')
@@ -31,6 +32,8 @@ def main():
             x += step_size
         else:
             break
+    # Calculate the distance between (0,0) and (x,y)
+    # square root ((x-0)^2+(y-0)^2)
     distance = math.ceil(math.sqrt(x**x+y**y))
     print ("The distance is ", distance)
 
