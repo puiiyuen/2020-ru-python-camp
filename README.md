@@ -23,7 +23,7 @@ Write a program that computes the net amount of a bank account based on a transa
 Find all numbers between 2000 and 3200, which are divisible by 7 but are not a multiple of 5
 
 ## Task 7
-Task/Requirement: A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of robot movement is shown as the following: **UP 5 DOWN 3 LEFT 3 RIGHT 2**. The numbers after the direction are steps. Write a program to compute the distance from current position after a sequence of movement and original point. If the distance is a float, then just print the nearest integer.
+A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of robot movement is shown as the following: **UP 5 DOWN 3 LEFT 3 RIGHT 2**. The numbers after the direction are steps. Write a program to compute the distance from current position after a sequence of movement and original point. If the distance is a float, then just print the nearest integer.
 
 ## Task 8
 Files are backed up with the following name format every day: yearmonthday_backup_appname.xyz,
@@ -33,10 +33,10 @@ Files are backed up with the following name format every day: yearmonthday_backu
 write a program which creates a string with the filename for all the days in all the months in a year
 
 ## Task 9
-Task/Requirement: You have two variable; a = 5 and b = 3, Swap the integers such that a = 3 and b = 5, without creating additional variables
+You have two variable; a = 5 and b = 3, Swap the integers such that a = 3 and b = 5, without creating additional variables
 
 ## Task 10
-Task/Requirement: A website requires the users to input username and password to register. Write a program to check the validity of password input by users. Following are the criteria for checking the password:
+A website requires the users to input username and password to register. Write a program to check the validity of password input by users. Following are the criteria for checking the password:
 1. At least 1 letter between [a-z]
 2. At least 1 number between [0-9]
 3. At least 1 letter between [A-Z]
